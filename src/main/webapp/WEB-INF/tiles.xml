@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="det.default" template="/WEB-INF/layouts/default.jsp">
+        <put-attribute name="title" value="Staycon Homepage" />
+    </definition>
+
+    <definition name="det.homepage" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/index.jsp" />
+    </definition>
+
+    <definition name="det.about" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/about.jsp" />
+    </definition>
+
+    <definition name="det.addStatus" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/addStatus.jsp" />
+    </definition>
+
+    <definition name="det.displayStatus" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/displayStatus.jsp" />
+    </definition>
+
+    <definition name="det.editStatus" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/editStatus.jsp" />
+    </definition>
+
+    <definition name="det.login" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+    </definition>
+
+    <definition name="det.register" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/register.jsp" />
+    </definition>
+
+    <definition name="det.verify" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/verifyEmail.jsp" />
+    </definition>
+
+    <definition name="det.message" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/verificationMessage.jsp" />
+    </definition>
+
+    <definition name="det.exception" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/exceptionHandler.jsp" />
+    </definition>
+
+    <definition name="det.profile" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/profile.jsp" />
+    </definition>
+
+    <definition name="det.editprofile" extends="det.default">
+        <put-attribute name="content" value="/WEB-INF/tiles/editProfile.jsp" />
+    </definition>
+
+</tiles-definitions>

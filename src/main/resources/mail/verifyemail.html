@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block>
+
+    <span th:text="'Hello ' + ${name}">Hi there Orkhan</span>
+
+    <p>Thank you for registering</p>
+    <p>Please click <a th:href="@{${url} + '/confirmRegistration?t=' + ${token}}">here</a> to vefify your email adress</p>
+</th:block>
+
+</html>
